@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pencatat Keuangan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Pencatat Keuangan</h1>
+
+    <section class="summary">
+      <div>Saldo <strong id="saldo">Rp 0</strong></div>
+      <div>Pemasukan <strong id="pemasukan">Rp 0</strong></div>
+      <div>Pengeluaran <strong id="pengeluaran">Rp 0</strong></div>
+    </section>
+
+    <form id="form-transaksi">
+      <input type="text" id="keterangan" placeholder="Keterangan" required>
+      <input type="number" id="jumlah" placeholder="Jumlah (Rp)" required min="1">
+      <select id="tipe">
+        <option value="pemasukan">Pemasukan</option>
+        <option value="pengeluaran">Pengeluaran</option>
+      </select>
+      <button type="submit">Tambah</button>
+    </form>
+
+    <ul id="daftar"></ul>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
